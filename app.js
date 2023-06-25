@@ -28,6 +28,17 @@ const app = express();
 
 mongoose.connect("mongodb+srv://charanjoseph00:charansDB@cluster0.k9iozfz.mongodb.net/userDB",{useNewUrlParser:true});
 
+mongoose.set('strictQuery',false);
+const connectDB = async() => {
+  try{
+    const conn = await mongoose.connect(process.env.MONGO_URI);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  }
+  catch(error){
+    process.exit(1);
+  
+  }
+}
 
 const userSchema= new mongoose.Schema({
     email: String,
