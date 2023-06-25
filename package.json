@@ -21,8 +21,6 @@
     "mongoose": "^7.3.0",
     "mongoose-encryption": "^2.1.2",
     "mongoose-findorcreate": "^4.0.0",
-    "netlify-cli": "^15.6.0",
-    "netlify-lambda": "^2.0.16",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
